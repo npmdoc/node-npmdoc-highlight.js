@@ -1,11 +1,13 @@
 # api documentation for  [highlight.js (v9.10.0)](https://highlightjs.org/)  [![npm package](https://img.shields.io/npm/v/npmdoc-highlight.js.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-highlight.js) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-highlight.js.svg)](https://travis-ci.org/npmdoc/node-npmdoc-highlight.js)
 #### Syntax highlighting with language autodetection.
 
-[![NPM](https://nodei.co/npm/highlight.js.png?downloads=true)](https://www.npmjs.com/package/highlight.js)
+[![NPM](https://nodei.co/npm/highlight.js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/highlight.js)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-highlight.js/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-highlight.js_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-highlight.js/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-highlight.js/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-highlight.js/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-highlight.js/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-highlight.js/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-highlight.js/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
@@ -15,8 +17,7 @@
 
 {
     "author": {
-        "name": "Ivan Sagalaev",
-        "email": "maniac@softwaremaniacs.org"
+        "name": "Ivan Sagalaev"
     },
     "bugs": {
         "url": "https://github.com/isagalaev/highlight.js/issues"
@@ -24,948 +25,712 @@
     "contributors": [
         {
             "name": "Ivan Sagalaev",
-            "email": "maniac@softwaremaniacs.org",
             "url": "original author"
         },
         {
-            "name": "Jeremy Hull",
-            "email": "sourdrums@gmail.com"
+            "name": "Jeremy Hull"
         },
         {
-            "name": "Oleg Efimov",
-            "email": "efimovov@gmail.com"
+            "name": "Oleg Efimov"
         },
         {
-            "name": "Peter Leonov",
-            "email": "gojpeg@gmail.com"
+            "name": "Peter Leonov"
         },
         {
-            "name": "Victor Karamzin",
-            "email": "Victor.Karamzin@enterra-inc.com"
+            "name": "Victor Karamzin"
         },
         {
-            "name": "Vsevolod Solovyov",
-            "email": "vsevolod.solovyov@gmail.com"
+            "name": "Vsevolod Solovyov"
         },
         {
-            "name": "Anton Kovalyov",
-            "email": "anton@kovalyov.net"
+            "name": "Anton Kovalyov"
         },
         {
-            "name": "Nikita Ledyaev",
-            "email": "lenikita@yandex.ru"
+            "name": "Nikita Ledyaev"
         },
         {
-            "name": "Konstantin Evdokimenko",
-            "email": "qewerty@gmail.com"
+            "name": "Konstantin Evdokimenko"
         },
         {
-            "name": "Dmitri Roudakov",
-            "email": "dmitri@roudakov.ru"
+            "name": "Dmitri Roudakov"
         },
         {
-            "name": "Yuri Ivanov",
-            "email": "ivanov@supersoft.ru"
+            "name": "Yuri Ivanov"
         },
         {
-            "name": "Vladimir Ermakov",
-            "email": "vooon341@mail.ru"
+            "name": "Vladimir Ermakov"
         },
         {
-            "name": "Vladimir Gubarkov",
-            "email": "xonixx@gmail.com"
+            "name": "Vladimir Gubarkov"
         },
         {
-            "name": "Brian Beck",
-            "email": "exogen@gmail.com"
+            "name": "Brian Beck"
         },
         {
-            "name": "MajestiC",
-            "email": "majestic2k@gmail.com"
+            "name": "MajestiC"
         },
         {
-            "name": "Vasily Polovnyov",
-            "email": "vast@whiteants.net"
+            "name": "Vasily Polovnyov"
         },
         {
-            "name": "Vladimir Epifanov",
-            "email": "voldmar@voldmar.ru"
+            "name": "Vladimir Epifanov"
         },
         {
-            "name": "Alexander Makarov",
-            "email": "sam@rmcreative.ru"
+            "name": "Alexander Makarov"
         },
         {
-            "name": "Vah",
-            "email": "vahtenberg@gmail.com"
+            "name": "Vah"
         },
         {
-            "name": "Shuen-Huei Guan",
-            "email": "drake.guan@gmail.com"
+            "name": "Shuen-Huei Guan"
         },
         {
-            "name": "Jason Diamond",
-            "email": "jason@diamond.name"
+            "name": "Jason Diamond"
         },
         {
-            "name": "Michal Gabrukiewicz",
-            "email": "mgabru@gmail.com"
+            "name": "Michal Gabrukiewicz"
         },
         {
-            "name": "Ruslan Keba",
-            "email": "rukeba@gmail.com"
+            "name": "Ruslan Keba"
         },
         {
-            "name": "Sergey Baranov",
-            "email": "segyrn@yandex.ru"
+            "name": "Sergey Baranov"
         },
         {
-            "name": "Zaripov Yura",
-            "email": "yur4ik7@ukr.net"
+            "name": "Zaripov Yura"
         },
         {
-            "name": "Oleg Volchkov",
-            "email": "oleg@volchkov.net"
+            "name": "Oleg Volchkov"
         },
         {
-            "name": "Vasily Mikhailitchenko",
-            "email": "vaskas@programica.ru"
+            "name": "Vasily Mikhailitchenko"
         },
         {
-            "name": "Jan Berkel",
-            "email": "jan.berkel@gmail.com"
+            "name": "Jan Berkel"
         },
         {
-            "name": "Vladimir Moskva",
-            "email": "vladmos@gmail.com"
+            "name": "Vladimir Moskva"
         },
         {
-            "name": "Loren Segal",
-            "email": "lsegal@soen.ca"
+            "name": "Loren Segal"
         },
         {
-            "name": "Andrew Fedorov",
-            "email": "dmmdrs@mail.ru"
+            "name": "Andrew Fedorov"
         },
         {
-            "name": "Igor Kalnitsky",
-            "email": "igor@kalnitsky.org"
+            "name": "Igor Kalnitsky"
         },
         {
-            "name": "Valerii Hiora",
-            "email": "valerii.hiora@gmail.com"
+            "name": "Valerii Hiora"
         },
         {
-            "name": "Nikolay Zakharov",
-            "email": "nikolay.desh@gmail.com"
+            "name": "Nikolay Zakharov"
         },
         {
-            "name": "Dmitry Kovega",
-            "email": "arhibot@gmail.com"
+            "name": "Dmitry Kovega"
         },
         {
-            "name": "Sergey Ignatov",
-            "email": "sergey@ignatov.spb.su"
+            "name": "Sergey Ignatov"
         },
         {
-            "name": "Antono Vasiljev",
-            "email": "self@antono.info"
+            "name": "Antono Vasiljev"
         },
         {
-            "name": "Stephan Kountso",
-            "email": "steplg@gmail.com"
+            "name": "Stephan Kountso"
         },
         {
-            "name": "pumbur",
-            "email": "pumbur@pumbur.net"
+            "name": "pumbur"
         },
         {
-            "name": "John Crepezzi",
-            "email": "john.crepezzi@gmail.com"
+            "name": "John Crepezzi"
         },
         {
-            "name": "Andrey Vlasovskikh",
-            "email": "andrey.vlasovskikh@gmail.com"
+            "name": "Andrey Vlasovskikh"
         },
         {
-            "name": "Alexander Myadzel",
-            "email": "myadzel@gmail.com"
+            "name": "Alexander Myadzel"
         },
         {
-            "name": "Evgeny Stepanischev",
-            "email": "imbolk@gmail.com"
+            "name": "Evgeny Stepanischev"
         },
         {
-            "name": "Dmytrii Nagirniak",
-            "email": "dnagir@gmail.com"
+            "name": "Dmytrii Nagirniak"
         },
         {
-            "name": "Luigi Maselli",
-            "email": "grigio.org@gmail.com"
+            "name": "Luigi Maselli"
         },
         {
-            "name": "Denis Bardadym",
-            "email": "bardadymchik@gmail.com"
+            "name": "Denis Bardadym"
         },
         {
-            "name": "Aahan Krish",
-            "email": "geekpanth3r@gmail.com"
+            "name": "Aahan Krish"
         },
         {
-            "name": "Ilya Baryshev",
-            "email": "baryshev@gmail.com"
+            "name": "Ilya Baryshev"
         },
         {
-            "name": "Aleksandar Ruzicic",
-            "email": "aleksandar@ruzicic.info"
+            "name": "Aleksandar Ruzicic"
         },
         {
-            "name": "Joe Cheng",
-            "email": "joe@rstudio.org"
+            "name": "Joe Cheng"
         },
         {
-            "name": "Angel G. Olloqui",
-            "email": "angelgarcia.mail@gmail.com"
+            "name": "Angel G. Olloqui"
         },
         {
-            "name": "Jason Tate",
-            "email": "adminz@web-cms-designs.com"
+            "name": "Jason Tate"
         },
         {
-            "name": "Sergey Tikhomirov",
-            "email": "sergey@tikhomirov.io"
+            "name": "Sergey Tikhomirov"
         },
         {
-            "name": "Marc Fornos",
-            "email": "marc.fornos@gmail.com"
+            "name": "Marc Fornos"
         },
         {
-            "name": "Yoshihide Jimbo",
-            "email": "yjimbo@gmail.com"
+            "name": "Yoshihide Jimbo"
         },
         {
-            "name": "Casey Duncan",
-            "email": "casey.duncan@gmail.com"
+            "name": "Casey Duncan"
         },
         {
-            "name": "Eugene Nizhibitsky",
-            "email": "nizhibitsky@gmail.com"
+            "name": "Eugene Nizhibitsky"
         },
         {
-            "name": "Alberto Gimeno",
-            "email": "gimenete@gmail.com"
+            "name": "Alberto Gimeno"
         },
         {
-            "name": "Kirk Kimmel",
-            "email": "kimmel.k.programmer@gmail.com"
+            "name": "Kirk Kimmel"
         },
         {
-            "name": "Nathan Grigg",
-            "email": "nathan@nathanamy.org"
+            "name": "Nathan Grigg"
         },
         {
-            "name": "Dr. Drang",
-            "email": "drdrang@gmail.com"
+            "name": "Dr. Drang"
         },
         {
-            "name": "Robin Ward",
-            "email": "robin.ward@gmail.com"
+            "name": "Robin Ward"
         },
         {
-            "name": "Dmitry Medvinsky",
-            "email": "me@dmedvinsky.name"
+            "name": "Dmitry Medvinsky"
         },
         {
-            "name": "Jason Jacobson",
-            "email": "jason.a.jacobson@gmail.com"
+            "name": "Jason Jacobson"
         },
         {
-            "name": "Jonas Follesø",
-            "email": "jonas@follesoe.no"
+            "name": "Jonas Follesø"
         },
         {
-            "name": "Dan Allen",
-            "email": "dan.j.allen@gmail.com"
+            "name": "Dan Allen"
         },
         {
-            "name": "noformnocontent",
-            "email": "i@noformnocontent.com"
+            "name": "noformnocontent"
         },
         {
-            "name": "Damien White",
-            "email": "damien.white@visoftinc.com"
+            "name": "Damien White"
         },
         {
-            "name": "Alexander Marenin",
-            "email": "great_muchacho@mail.ru"
+            "name": "Alexander Marenin"
         },
         {
-            "name": "Cédric Néhémie",
-            "email": "cedric.nehemie@gmail.com"
+            "name": "Cédric Néhémie"
         },
         {
-            "name": "Simon Madine",
-            "email": "simon@angryrobotzombie.com"
+            "name": "Simon Madine"
         },
         {
-            "name": "Benjamin Pannell",
-            "email": "contact@sierrasoftworks.com"
+            "name": "Benjamin Pannell"
         },
         {
-            "name": "Eric Knibbe",
-            "email": "eric@lassosoft.com"
+            "name": "Eric Knibbe"
         },
         {
-            "name": "Poren Chiang",
-            "email": "ren.chiang@gmail.com"
+            "name": "Poren Chiang"
         },
         {
-            "name": "Kelley van Evert",
-            "email": "kelleyvanevert@gmail.com"
+            "name": "Kelley van Evert"
         },
         {
-            "name": "Kurt Emch",
-            "email": "kurt@kurtemch.com"
+            "name": "Kurt Emch"
         },
         {
-            "name": "Mehdi Dogguy",
-            "email": "mehdi@dogguy.org"
+            "name": "Mehdi Dogguy"
         },
         {
-            "name": "Nicolas Braud-Santoni",
-            "email": "nicolas.braud-santoni@ens-cachan.fr"
+            "name": "Nicolas Braud-Santoni"
         },
         {
-            "name": "Ralf Bitter",
-            "email": "rabit@revigniter.com"
+            "name": "Ralf Bitter"
         },
         {
-            "name": "Sylvestre Ledru",
-            "email": "sylvestre.ledru@scilab-enterprises.com"
+            "name": "Sylvestre Ledru"
         },
         {
-            "name": "Troy Kershaw",
-            "email": "hello@troykershaw.com"
+            "name": "Troy Kershaw"
         },
         {
-            "name": "Zena Treep",
-            "email": "zena.treep@gmail.com"
+            "name": "Zena Treep"
         },
         {
-            "name": "Daniel Kvasnicka",
-            "email": "dkvasnicka@vendavo.com"
+            "name": "Daniel Kvasnicka"
         },
         {
-            "name": "Carlo Kok",
-            "email": "ck@remobjects.com"
+            "name": "Carlo Kok"
         },
         {
-            "name": "Bram de Haan",
-            "email": "info@atelierbramdehaan.nl"
+            "name": "Bram de Haan"
         },
         {
-            "name": "Seongwon Lee",
-            "email": "dlimpid@gmail.com"
+            "name": "Seongwon Lee"
         },
         {
-            "name": "Zaven Muradyan",
-            "email": "megalivoithos@gmail.com"
+            "name": "Zaven Muradyan"
         },
         {
-            "name": "Jan T. Sott",
-            "email": "git@idleberg.com"
+            "name": "Jan T. Sott"
         },
         {
-            "name": "Brent Bradbury",
-            "email": "brent@brentium.com"
+            "name": "Brent Bradbury"
         },
         {
-            "name": "Martin Dilling-Hansen",
-            "email": "martindlling@gmail.com"
+            "name": "Martin Dilling-Hansen"
         },
         {
-            "name": "Ilya Vassilevsky",
-            "email": "vassilevsky@gmail.com"
+            "name": "Ilya Vassilevsky"
         },
         {
-            "name": "Josh Adams",
-            "email": "josh@isotope11.com"
+            "name": "Josh Adams"
         },
         {
-            "name": "Dan Tao",
-            "email": "daniel.tao@gmail.com"
+            "name": "Dan Tao"
         },
         {
-            "name": "Jeff Escalante",
-            "email": "hello@jenius.me"
+            "name": "Jeff Escalante"
         },
         {
-            "name": "Jun Yang",
-            "email": "yangjvn@126.com"
+            "name": "Jun Yang"
         },
         {
-            "name": "Nikolay Lisienko",
-            "email": "info@neor.ru"
+            "name": "Nikolay Lisienko"
         },
         {
-            "name": "Heiko August",
-            "email": "post@auge8472.de"
+            "name": "Heiko August"
         },
         {
-            "name": "Domen Kožar",
-            "email": "domen@dev.si"
+            "name": "Domen Kožar"
         },
         {
-            "name": "Travis Odom",
-            "email": "travis.a.odom@gmail.com"
+            "name": "Travis Odom"
         },
         {
-            "name": "innocenat",
-            "email": "innocenat@gmail.com"
+            "name": "innocenat"
         },
         {
-            "name": "Arthur Bikmullin",
-            "email": "devolonter@gmail.com"
+            "name": "Arthur Bikmullin"
         },
         {
-            "name": "Pascal Hurni",
-            "email": "phi@ruby-reactive.org"
+            "name": "Pascal Hurni"
         },
         {
-            "name": "Roman Shmatov",
-            "email": "romanshmatov@gmail.com"
+            "name": "Roman Shmatov"
         },
         {
-            "name": "Nic West",
-            "email": "nic@letolab.com"
+            "name": "Nic West"
         },
         {
-            "name": "Panu Horsmalahti",
-            "email": "panu.horsmalahti@iki.fi"
+            "name": "Panu Horsmalahti"
         },
         {
-            "name": "Flaviu Tamas",
-            "email": "tamas.flaviu@gmail.com"
+            "name": "Flaviu Tamas"
         },
         {
-            "name": "Damian Mee",
-            "email": "mee.damian@gmail.com"
+            "name": "Damian Mee"
         },
         {
-            "name": "Christopher Kaster",
-            "email": "ikasoki@gmail.com"
+            "name": "Christopher Kaster"
         },
         {
-            "name": "Chris Eidhof",
-            "email": "chris@eidhof.nl"
+            "name": "Chris Eidhof"
         },
         {
-            "name": "Nate Cook",
-            "email": "natecook@gmail.com"
+            "name": "Nate Cook"
         },
         {
-            "name": "Matt Diephouse",
-            "email": "matt@diephouse.com"
+            "name": "Matt Diephouse"
         },
         {
-            "name": "Erik Osheim",
-            "email": "d_m@plastic-idolatry.com"
+            "name": "Erik Osheim"
         },
         {
-            "name": "Guillaume Laforge",
-            "email": "glaforge@gmail.com"
+            "name": "Guillaume Laforge"
         },
         {
-            "name": "Lucas Mazza",
-            "email": "lucastmazza@gmail.com"
+            "name": "Lucas Mazza"
         },
         {
-            "name": "Maxim Dikun",
-            "email": "dikmax@gmail.com"
+            "name": "Maxim Dikun"
         },
         {
-            "name": "Henrik Feldt",
-            "email": "henrik@haf.se"
+            "name": "Henrik Feldt"
         },
         {
-            "name": "Anton Kochkov",
-            "email": "anton.kochkov@gmail.com"
+            "name": "Anton Kochkov"
         },
         {
-            "name": "Michael Allen",
-            "email": "Michael.Allen@benefitfocus.com"
+            "name": "Michael Allen"
         },
         {
-            "name": "JP Verkamp",
-            "email": "me@jverkamp.com"
+            "name": "JP Verkamp"
         },
         {
-            "name": "Adam Joseph Cook",
-            "email": "adam.joseph.cook@gmail.com"
+            "name": "Adam Joseph Cook"
         },
         {
-            "name": "Sergey Vidyuk",
-            "email": "svidyuk@gmail.com"
+            "name": "Sergey Vidyuk"
         },
         {
-            "name": "Radek Liska",
-            "email": "radekliska@gmail.com"
+            "name": "Radek Liska"
         },
         {
-            "name": "Jose Molina Colmenero",
-            "email": "gaudy41@gmail.com"
+            "name": "Jose Molina Colmenero"
         },
         {
-            "name": "Max Mikhailov",
-            "email": "seven.phases.max@gmail.com"
+            "name": "Max Mikhailov"
         },
         {
-            "name": "Bryant Williams",
-            "email": "b.n.williams@gmail.com"
+            "name": "Bryant Williams"
         },
         {
-            "name": "Erik Paluka",
-            "email": "erik.paluka@gmail.com"
+            "name": "Erik Paluka"
         },
         {
-            "name": "Luke Holder",
-            "email": "lukemh@gmail.com"
+            "name": "Luke Holder"
         },
         {
-            "name": "David Mohundro",
-            "email": "david@mohundro.com"
+            "name": "David Mohundro"
         },
         {
-            "name": "Nicholas Blumhardt",
-            "email": "nblumhardt@nblumhardt.com"
+            "name": "Nicholas Blumhardt"
         },
         {
-            "name": "Christophe de Dinechin",
-            "email": "christophe@taodyne.com"
+            "name": "Christophe de Dinechin"
         },
         {
-            "name": "Taneli Vatanen",
-            "email": "taneli.vatanen@gmail.com"
+            "name": "Taneli Vatanen"
         },
         {
-            "name": "Jen Evers-Corvina",
-            "email": "jen@sevvie.net"
+            "name": "Jen Evers-Corvina"
         },
         {
-            "name": "Kassio Borges",
-            "email": "kassioborgesm@gmail.com"
+            "name": "Kassio Borges"
         },
         {
-            "name": "Cedric Sohrauer",
-            "email": "sohrauer@googlemail.com"
+            "name": "Cedric Sohrauer"
         },
         {
-            "name": "Mickaël Delahaye",
-            "email": "mickael.delahaye@gmail.com"
+            "name": "Mickaël Delahaye"
         },
         {
-            "name": "Hakan Özler",
-            "email": "ozler.hakan@gmail.com"
+            "name": "Hakan Özler"
         },
         {
-            "name": "Trey Shugart",
-            "email": "treshugart@gmail.com"
+            "name": "Trey Shugart"
         },
         {
-            "name": "Vincent Zurczak",
-            "email": "vzurczak@linagora.com"
+            "name": "Vincent Zurczak"
         },
         {
-            "name": "Adam Joseph Cook",
-            "email": "adam.joseph.cook@gmail.com"
+            "name": "Adam Joseph Cook"
         },
         {
-            "name": "Edwin Dalorzo",
-            "email": "edwin@dalorzo.org"
+            "name": "Edwin Dalorzo"
         },
         {
-            "name": "mucaho",
-            "email": "mkucko@gmail.com"
+            "name": "mucaho"
         },
         {
-            "name": "Dennis Titze",
-            "email": "dennis.titze@gmail.com"
+            "name": "Dennis Titze"
         },
         {
-            "name": "Jon Evans",
-            "email": "jon@craftyjon.com"
+            "name": "Jon Evans"
         },
         {
-            "name": "Brian Quistorff",
-            "email": "bquistorff@gmail.com"
+            "name": "Brian Quistorff"
         },
         {
-            "name": "Jonathan Suever",
-            "email": "suever@gmail.com"
+            "name": "Jonathan Suever"
         },
         {
-            "name": "Alexis Hénaut",
-            "email": "alexis@henaut.net"
+            "name": "Alexis Hénaut"
         },
         {
-            "name": "Chris Kiehl",
-            "email": "audionautic@gmail.com"
+            "name": "Chris Kiehl"
         },
         {
-            "name": "Peter Piwowarski",
-            "email": "oldlaptop654@aol.com"
+            "name": "Peter Piwowarski"
         },
         {
-            "name": "Kenta Sato",
-            "email": "bicycle1885@gmail.com"
+            "name": "Kenta Sato"
         },
         {
-            "name": "Anthony Scemama",
-            "email": "scemama@irsamc.ups-tlse.fr"
+            "name": "Anthony Scemama"
         },
         {
-            "name": "Taufik Nurrohman",
-            "email": "latitudu.latitudu@gmail.com"
+            "name": "Taufik Nurrohman"
         },
         {
-            "name": "Pedro Oliveira",
-            "email": "kanytu@gmail.com"
+            "name": "Pedro Oliveira"
         },
         {
-            "name": "Gu Yiling",
-            "email": "justice360@gmail.com"
+            "name": "Gu Yiling"
         },
         {
-            "name": "Thomas Applencourt",
-            "email": "thomas.applencourt@irsamc.ups-tlse.fr"
+            "name": "Thomas Applencourt"
         },
         {
-            "name": "Andrew Farmer",
-            "email": "ahfarmer@gmail.com"
+            "name": "Andrew Farmer"
         },
         {
-            "name": "Sergey Mashkov",
-            "email": "cy6erGn0m@gmail.com"
+            "name": "Sergey Mashkov"
         },
         {
-            "name": "Raivo Laanemets",
-            "email": "raivo@infdot.com"
+            "name": "Raivo Laanemets"
         },
         {
-            "name": "Kenneth Fuglsang",
-            "email": "kfuglsang@gmail.com"
+            "name": "Kenneth Fuglsang"
         },
         {
-            "name": "David Anson",
-            "email": "david@dlaa.me"
+            "name": "David Anson"
         },
         {
-            "name": "Louis Barranqueiro",
-            "email": "louis.barranqueiro@gmail.com"
+            "name": "Louis Barranqueiro"
         },
         {
-            "name": "Tim Schumacher",
-            "email": "tim@datenknoten.me"
+            "name": "Tim Schumacher"
         },
         {
-            "name": "Lucas Werkmeister",
-            "email": "mail@lucaswerkmeister.de"
+            "name": "Lucas Werkmeister"
         },
         {
-            "name": "Dan Panzarella",
-            "email": "alsoelp@gmail.com"
+            "name": "Dan Panzarella"
         },
         {
-            "name": "Bruno Dias",
-            "email": "bruno.r.dias@gmail.com"
+            "name": "Bruno Dias"
         },
         {
-            "name": "Jay Strybis",
-            "email": "jay.strybis@gmail.com"
+            "name": "Jay Strybis"
         },
         {
-            "name": "Guillaume Gomez",
-            "email": "guillaume1.gomez@gmail.com"
+            "name": "Guillaume Gomez"
         },
         {
-            "name": "Janis Voigtländer",
-            "email": "janis.voigtlaender@gmail.com"
+            "name": "Janis Voigtländer"
         },
         {
-            "name": "Dirk Kirsten",
-            "email": "dk@basex.org"
+            "name": "Dirk Kirsten"
         },
         {
-            "name": "MY Sun",
-            "email": "simonmysun@gmail.com"
+            "name": "MY Sun"
         },
         {
-            "name": "Vadimtro",
-            "email": "vadimtro@yahoo.com"
+            "name": "Vadimtro"
         },
         {
-            "name": "Benjamin Auder",
-            "email": "benjamin.auder@gmail.com"
+            "name": "Benjamin Auder"
         },
         {
-            "name": "Dotan Dimet",
-            "email": "dotan@corky.net"
+            "name": "Dotan Dimet"
         },
         {
-            "name": "Manh Tuan",
-            "email": "junookyo@gmail.com"
+            "name": "Manh Tuan"
         },
         {
-            "name": "Philippe Charrière",
-            "email": "ph.charriere@gmail.com"
+            "name": "Philippe Charrière"
         },
         {
-            "name": "Stefan Bechert",
-            "email": "stefan.bechert@gmx.net"
+            "name": "Stefan Bechert"
         },
         {
-            "name": "Samuel Reed",
-            "email": "sam@bitmex.com"
+            "name": "Samuel Reed"
         },
         {
-            "name": "Yury Selivanov",
-            "email": "yselivanov@gmail.com"
+            "name": "Yury Selivanov"
         },
         {
-            "name": "Tsuyusato Kitsune",
-            "email": "make.just.on@gmail.com"
+            "name": "Tsuyusato Kitsune"
         },
         {
-            "name": "Mick MacCallum",
-            "email": "micksmaccallum@gmail.com"
+            "name": "Mick MacCallum"
         },
         {
-            "name": "Kristoffer Gronlund",
-            "email": "kgronlund@suse.com"
+            "name": "Kristoffer Gronlund"
         },
         {
-            "name": "Søren Enevoldsen",
-            "email": "senevoldsen90@gmail.com"
+            "name": "Søren Enevoldsen"
         },
         {
-            "name": "Daniel Rosenwasser",
-            "email": "DanielRosenwasser@users.noreply.github.com"
+            "name": "Daniel Rosenwasser"
         },
         {
-            "name": "Ladislav Prskavec",
-            "email": "ladislav@prskavec.net"
+            "name": "Ladislav Prskavec"
         },
         {
-            "name": "Jan Kühle",
-            "email": "jkuehle90@gmail.com"
+            "name": "Jan Kühle"
         },
         {
-            "name": "Stefan Wienert",
-            "email": "stwienert@gmail.com"
+            "name": "Stefan Wienert"
         },
         {
-            "name": "Nikita Savchenko",
-            "email": "zitros.lab@gmail.com"
+            "name": "Nikita Savchenko"
         },
         {
-            "name": "Stefania Mellai",
-            "email": "s.mellai@arduino.cc"
+            "name": "Stefania Mellai"
         },
         {
-            "name": "Nebuleon Fumika",
-            "email": "nebuleon.fumika@gmail.com"
+            "name": "Nebuleon Fumika"
         },
         {
-            "name": "prince",
-            "email": "MC.prince.0203@gmail.com"
+            "name": "prince"
         },
         {
-            "name": "Brendan Rocks",
-            "email": "rocks.brendan@gmail.com"
+            "name": "Brendan Rocks"
         },
         {
-            "name": "Raphaël Assénat",
-            "email": "raph@raphnet.net"
+            "name": "Raphaël Assénat"
         },
         {
-            "name": "Matt Evans",
-            "email": "matt@aptech.com"
+            "name": "Matt Evans"
         },
         {
-            "name": "Martin Braun",
-            "email": "martin.braun@ettus.com"
+            "name": "Martin Braun"
         },
         {
-            "name": "Boris Cherny",
-            "email": "boris@performancejs.com"
+            "name": "Boris Cherny"
         },
         {
-            "name": "John Foster",
-            "email": "jfoster@esri.com"
+            "name": "John Foster"
         },
         {
-            "name": "Robert Dodier",
-            "email": "robert.dodier@gmail.com"
+            "name": "Robert Dodier"
         },
         {
-            "name": "Anthony Dugois",
-            "email": "dev.anthonydugois@gmail.com"
+            "name": "Anthony Dugois"
         },
         {
-            "name": "Qeole",
-            "email": "qeole@outlook.com"
+            "name": "Qeole"
         },
         {
-            "name": "Denis Ciccale",
-            "email": "dciccale@gmail.com"
+            "name": "Denis Ciccale"
         },
         {
-            "name": "Michael Johnston",
-            "email": "lastobelus@gmail.com"
+            "name": "Michael Johnston"
         },
         {
-            "name": "Taras",
-            "email": "oxdef@oxdef.info"
+            "name": "Taras"
         },
         {
-            "name": "Philipp Wolfer",
-            "email": "ph.wolfer@gmail.com"
+            "name": "Philipp Wolfer"
         },
         {
-            "name": "Mikko Kouhia",
-            "email": "mikko.kouhia@iki.fi"
+            "name": "Mikko Kouhia"
         },
         {
-            "name": "Billy Quith",
-            "email": "chinbillybilbo@gmail.com"
+            "name": "Billy Quith"
         },
         {
-            "name": "Herbert Shin",
-            "email": "initbar@protonmail.ch"
+            "name": "Herbert Shin"
         },
         {
-            "name": "Tristano Ajmone",
-            "email": "tajmone@gmail.com"
+            "name": "Tristano Ajmone"
         },
         {
-            "name": "Taisuke Fujimoto",
-            "email": "temp-impl@users.noreply.github.com"
+            "name": "Taisuke Fujimoto"
         },
         {
-            "name": "Boone Severson",
-            "email": "boone.severson@gmail.com"
+            "name": "Boone Severson"
         },
         {
-            "name": "Victor Zhou",
-            "email": "OiCMudkips@users.noreply.github.com"
+            "name": "Victor Zhou"
         },
         {
-            "name": "Lars Schulna",
-            "email": "kartoffelbrei.mit.muskatnuss@gmail.org"
+            "name": "Lars Schulna"
         },
         {
-            "name": "Jacob Childress",
-            "email": "jacobc@gmail.com"
+            "name": "Jacob Childress"
         },
         {
-            "name": "Gavin Siu",
-            "email": "gavsiu@gmail.com"
+            "name": "Gavin Siu"
         },
         {
-            "name": "Builder's Brewery",
-            "email": "buildersbrewery@gmail.com"
+            "name": "Builder's Brewery"
         },
         {
-            "name": "Sergey Bronnikov",
-            "email": "sergeyb@bronevichok.ru"
+            "name": "Sergey Bronnikov"
         },
         {
-            "name": "Joe Eli McIlvain",
-            "email": "joe.eli.mac@gmail.org"
+            "name": "Joe Eli McIlvain"
         },
         {
-            "name": "Stephan Boyer",
-            "email": "stephan@stephanboyer.com"
+            "name": "Stephan Boyer"
         },
         {
-            "name": "Alex McKibben",
-            "email": "alex@nullscope.net"
+            "name": "Alex McKibben"
         },
         {
-            "name": "Daniel Gamage",
-            "email": "hellodanielgamage@gmail.com"
+            "name": "Daniel Gamage"
         },
         {
-            "name": "Matthew Daly",
-            "email": "matthewbdaly@gmail.com"
+            "name": "Matthew Daly"
         },
         {
-            "name": "Magnus Madsen",
-            "email": "mmadsen@uwaterloo.ca"
+            "name": "Magnus Madsen"
         },
         {
-            "name": "Camil Staps",
-            "email": "info@camilstaps.nl"
+            "name": "Camil Staps"
         },
         {
-            "name": "Alexander Lichter",
-            "email": "manniL@gmx.net"
+            "name": "Alexander Lichter"
         },
         {
-            "name": "Nicolas Le Gall",
-            "email": "contact@nlegall.fr"
+            "name": "Nicolas Le Gall"
         },
         {
-            "name": "Kenton Hamaluik",
-            "email": "kentonh@gmail.com"
+            "name": "Kenton Hamaluik"
         },
         {
-            "name": "Marvin Saignat",
-            "email": "contact@zgmrvn.com"
+            "name": "Marvin Saignat"
         },
         {
-            "name": "Michael Rodler",
-            "email": "contact@f0rki.at"
+            "name": "Michael Rodler"
         },
         {
-            "name": "Sergey Sobko",
-            "email": "s.sobko@profitware.ru"
+            "name": "Sergey Sobko"
         },
         {
-            "name": "Hale Chan",
-            "email": "halechan@qq.com"
+            "name": "Hale Chan"
         },
         {
-            "name": "Matt Evans",
-            "email": "syrius3@gmail.com"
+            "name": "Matt Evans"
         },
         {
-            "name": "Kasper Andersen",
-            "email": "kma_untrusted@protonmail.com"
+            "name": "Kasper Andersen"
         },
         {
-            "name": "Philipp A.",
-            "email": "flying-sheep@web.de"
+            "name": "Philipp A."
         },
         {
-            "name": "Guannan Wei",
-            "email": "guannanwei@outlook.com"
+            "name": "Guannan Wei"
         },
         {
-            "name": "Sam Wu",
-            "email": "samsam2310@gmail.com"
+            "name": "Sam Wu"
         },
         {
-            "name": "Ike Ku",
-            "email": "dempfi@yahoo.com"
+            "name": "Ike Ku"
         },
         {
-            "name": "Andres Täht",
-            "email": "andres.taht@gmail.com"
+            "name": "Andres Täht"
         },
         {
-            "name": "Rene Saarsoo",
-            "email": "nene@triin.net"
+            "name": "Rene Saarsoo"
         }
     ],
     "dependencies": {},
@@ -1001,17 +766,14 @@
     "main": "./lib/index.js",
     "maintainers": [
         {
-            "name": "jga",
-            "email": "me@jga.me"
+            "name": "jga"
         },
         {
-            "name": "isagalaev",
-            "email": "maniac@softwaremaniacs.org"
+            "name": "isagalaev"
         }
     ],
     "name": "highlight.js",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/isagalaev/highlight.js.git"
@@ -1056,12 +818,48 @@
 1.  object <span class="apidocSignatureSpan">highlight.js.</span>REGEXP_MODE
 1.  object <span class="apidocSignatureSpan">highlight.js.</span>TITLE_MODE
 1.  object <span class="apidocSignatureSpan">highlight.js.</span>UNDERSCORE_TITLE_MODE
+1.  object <span class="apidocSignatureSpan">highlight.js.</span>js.highlight
 1.  string <span class="apidocSignatureSpan">highlight.js.</span>BINARY_NUMBER_RE
 1.  string <span class="apidocSignatureSpan">highlight.js.</span>C_NUMBER_RE
 1.  string <span class="apidocSignatureSpan">highlight.js.</span>IDENT_RE
 1.  string <span class="apidocSignatureSpan">highlight.js.</span>NUMBER_RE
 1.  string <span class="apidocSignatureSpan">highlight.js.</span>RE_STARTERS_RE
 1.  string <span class="apidocSignatureSpan">highlight.js.</span>UNDERSCORE_IDENT_RE
+
+#### [module highlight.js.highlight](#apidoc.module.highlight.js.highlight)
+1.  [function <span class="apidocSignatureSpan">highlight.js.</span>highlight (name, value, ignore_illegals, continuation)](#apidoc.element.highlight.js.highlight.highlight)
+1.  [function <span class="apidocSignatureSpan">highlight.js.highlight.</span>COMMENT (begin, end, inherits)](#apidoc.element.highlight.js.highlight.COMMENT)
+1.  [function <span class="apidocSignatureSpan">highlight.js.highlight.</span>configure (user_options)](#apidoc.element.highlight.js.highlight.configure)
+1.  [function <span class="apidocSignatureSpan">highlight.js.highlight.</span>fixMarkup (value)](#apidoc.element.highlight.js.highlight.fixMarkup)
+1.  [function <span class="apidocSignatureSpan">highlight.js.highlight.</span>getLanguage (name)](#apidoc.element.highlight.js.highlight.getLanguage)
+1.  [function <span class="apidocSignatureSpan">highlight.js.highlight.</span>highlightAuto (text, languageSubset)](#apidoc.element.highlight.js.highlight.highlightAuto)
+1.  [function <span class="apidocSignatureSpan">highlight.js.highlight.</span>highlightBlock (block)](#apidoc.element.highlight.js.highlight.highlightBlock)
+1.  [function <span class="apidocSignatureSpan">highlight.js.highlight.</span>inherit (parent)](#apidoc.element.highlight.js.highlight.inherit)
+1.  [function <span class="apidocSignatureSpan">highlight.js.highlight.</span>initHighlighting ()](#apidoc.element.highlight.js.highlight.initHighlighting)
+1.  [function <span class="apidocSignatureSpan">highlight.js.highlight.</span>initHighlightingOnLoad ()](#apidoc.element.highlight.js.highlight.initHighlightingOnLoad)
+1.  [function <span class="apidocSignatureSpan">highlight.js.highlight.</span>listLanguages ()](#apidoc.element.highlight.js.highlight.listLanguages)
+1.  [function <span class="apidocSignatureSpan">highlight.js.highlight.</span>registerLanguage (name, language)](#apidoc.element.highlight.js.highlight.registerLanguage)
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>APOS_STRING_MODE
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>BACKSLASH_ESCAPE
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>BINARY_NUMBER_MODE
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>CSS_NUMBER_MODE
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>C_BLOCK_COMMENT_MODE
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>C_LINE_COMMENT_MODE
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>C_NUMBER_MODE
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>HASH_COMMENT_MODE
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>METHOD_GUARD
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>NUMBER_MODE
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>PHRASAL_WORDS_MODE
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>QUOTE_STRING_MODE
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>REGEXP_MODE
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>TITLE_MODE
+1.  object <span class="apidocSignatureSpan">highlight.js.highlight.</span>UNDERSCORE_TITLE_MODE
+1.  string <span class="apidocSignatureSpan">highlight.js.highlight.</span>BINARY_NUMBER_RE
+1.  string <span class="apidocSignatureSpan">highlight.js.highlight.</span>C_NUMBER_RE
+1.  string <span class="apidocSignatureSpan">highlight.js.highlight.</span>IDENT_RE
+1.  string <span class="apidocSignatureSpan">highlight.js.highlight.</span>NUMBER_RE
+1.  string <span class="apidocSignatureSpan">highlight.js.highlight.</span>RE_STARTERS_RE
+1.  string <span class="apidocSignatureSpan">highlight.js.highlight.</span>UNDERSCORE_IDENT_RE
 
 
 
@@ -1090,7 +888,23 @@ COMMENT = function (begin, end, inherits) {
 ```
 - example usage
 ```shell
-n/a
+...
+  mode.contains.push({
+    className: 'doctag',
+    begin: '(?:TODO|FIXME|NOTE|BUG|XXX):',
+    relevance: 0
+  });
+  return mode;
+};
+hljs.C_LINE_COMMENT_MODE = hljs.COMMENT('//', '$');
+hljs.C_BLOCK_COMMENT_MODE = hljs.COMMENT('/\\*', '\\*/');
+hljs.HASH_COMMENT_MODE = hljs.COMMENT('#', '$');
+hljs.NUMBER_MODE = {
+  className: 'number',
+  begin: hljs.NUMBER_RE,
+  relevance: 0
+};
+...
 ```
 
 #### <a name="apidoc.element.highlight.js.configure"></a>[function <span class="apidocSignatureSpan">highlight.js.</span>configure (user_options)](#apidoc.element.highlight.js.configure)
@@ -1433,7 +1247,24 @@ function inherit(parent) {  // inherit(parent, override_obj, override_obj, ...)
 ```
 - example usage
 ```shell
-n/a
+...
+  illegal: '\\n',
+  contains: [hljs.BACKSLASH_ESCAPE]
+};
+hljs.PHRASAL_WORDS_MODE = {
+  begin: /\b(a|an|the|are|I'm|isn't|don't|doesn't|won't|but|just|should|pretty|simply|enough|gonna|going|wtf|so|such|will|you|your
+|like)\b/
+};
+hljs.COMMENT = function (begin, end, inherits) {
+  var mode = hljs.inherit(
+    {
+      className: 'comment',
+      begin: begin, end: end,
+      contains: []
+    },
+    inherits || {}
+  );
+...
 ```
 
 #### <a name="apidoc.element.highlight.js.initHighlighting"></a>[function <span class="apidocSignatureSpan">highlight.js.</span>initHighlighting ()](#apidoc.element.highlight.js.initHighlighting)
@@ -1495,6 +1326,485 @@ n/a
 ```
 
 #### <a name="apidoc.element.highlight.js.registerLanguage"></a>[function <span class="apidocSignatureSpan">highlight.js.</span>registerLanguage (name, language)](#apidoc.element.highlight.js.registerLanguage)
+- description and source-code
+```javascript
+function registerLanguage(name, language) {
+  var lang = languages[name] = language(hljs);
+  if (lang.aliases) {
+    lang.aliases.forEach(function(alias) {aliases[alias] = name;});
+  }
+}
+```
+- example usage
+```shell
+n/a
+```
+
+
+
+# <a name="apidoc.module.highlight.js.highlight"></a>[module highlight.js.highlight](#apidoc.module.highlight.js.highlight)
+
+#### <a name="apidoc.element.highlight.js.highlight.highlight"></a>[function <span class="apidocSignatureSpan">highlight.js.</span>highlight (name, value, ignore_illegals, continuation)](#apidoc.element.highlight.js.highlight.highlight)
+- description and source-code
+```javascript
+function highlight(name, value, ignore_illegals, continuation) {
+
+  function subMode(lexeme, mode) {
+    var i, length;
+
+    for (i = 0, length = mode.contains.length; i < length; i++) {
+      if (testRe(mode.contains[i].beginRe, lexeme)) {
+        return mode.contains[i];
+      }
+    }
+  }
+
+  function endOfMode(mode, lexeme) {
+    if (testRe(mode.endRe, lexeme)) {
+      while (mode.endsParent && mode.parent) {
+        mode = mode.parent;
+      }
+      return mode;
+    }
+    if (mode.endsWithParent) {
+      return endOfMode(mode.parent, lexeme);
+    }
+  }
+
+  function isIllegal(lexeme, mode) {
+    return !ignore_illegals && testRe(mode.illegalRe, lexeme);
+  }
+
+  function keywordMatch(mode, match) {
+    var match_str = language.case_insensitive ? match[0].toLowerCase() : match[0];
+    return mode.keywords.hasOwnProperty(match_str) && mode.keywords[match_str];
+  }
+
+  function buildSpan(classname, insideSpan, leaveOpen, noPrefix) {
+    var classPrefix = noPrefix ? '' : options.classPrefix,
+        openSpan    = '<span class="' + classPrefix,
+        closeSpan   = leaveOpen ? '' : spanEndTag
+
+    openSpan += classname + '">';
+
+    return openSpan + insideSpan + closeSpan;
+  }
+
+  function processKeywords() {
+    var keyword_match, last_index, match, result;
+
+    if (!top.keywords)
+      return escape(mode_buffer);
+
+    result = '';
+    last_index = 0;
+    top.lexemesRe.lastIndex = 0;
+    match = top.lexemesRe.exec(mode_buffer);
+
+    while (match) {
+      result += escape(mode_buffer.substring(last_index, match.index));
+      keyword_match = keywordMatch(top, match);
+      if (keyword_match) {
+        relevance += keyword_match[1];
+        result += buildSpan(keyword_match[0], escape(match[0]));
+      } else {
+        result += escape(match[0]);
+      }
+      last_index = top.lexemesRe.lastIndex;
+      match = top.lexemesRe.exec(mode_buffer);
+    }
+    return result + escape(mode_buffer.substr(last_index));
+  }
+
+  function processSubLanguage() {
+    var explicit = typeof top.subLanguage === 'string';
+    if (explicit && !languages[top.subLanguage]) {
+      return escape(mode_buffer);
+    }
+
+    var result = explicit ?
+                 highlight(top.subLanguage, mode_buffer, true, continuations[top.subLanguage]) :
+                 highlightAuto(mode_buffer, top.subLanguage.length ? top.subLanguage : undefined);
+
+    // Counting embedded language score towards the host language may be disabled
+    // with zeroing the containing mode relevance. Usecase in point is Markdown that
+    // allows XML everywhere and makes every XML snippet to have a much larger Markdown
+    // score.
+    if (top.relevance > 0) {
+      relevance += result.relevance;
+    }
+    if (explicit) {
+      continuations[top.subLanguage] = result.top;
+    }
+    return buildSpan(result.language, result.value, false, true);
+  }
+
+  function processBuffer() {
+    result += (top.subLanguage != null ? processSubLanguage() : processKeywords());
+    mode_buffer = '';
+  }
+
+  function startNewMode(mode) {
+    result += mode.className? buildSpan(mode.className, '', true): '';
+    top = Object.create(mode, {parent: {value: top}});
+  }
+
+  function processLexeme(buffer, lexeme) {
+
+    mode_buffer += buffer;
+
+    if (lexeme == null) {
+      processBuffer();
+      return 0;
+    }
+
+    var new_mode = subMode(lexeme, top);
+    if (new_mode) {
+      if (new_mode.skip) {
+        mode_buffer += lexeme;
+      } else {
+        if (new_mode.excludeBegin) {
+          mode_buffer += lexeme;
+        }
+        processBuffer();
+        if (!new_mode.returnBegin && !new_mode.excludeBegin) {
+          mode_buffer = lexeme;
+        }
+      }
+      startNewMode(new_mode, lexeme);
+      return new_mode.returnBegin ? 0 : lexeme.length;
+    }
+
+    var end_mode = endOfMode(top, lexeme);
+    if (end_mode) {
+      var origin = top;
+      if (origin.skip) {
+        mode_buffer += lexeme;
+      } else {
+        if (!(origin.returnEnd || origin.excludeEnd)) {
+          mode_buffer += lexeme;
+        }
+        processBuffer();
+        if (origin.excludeEnd) {
+          mode_buffer = lexeme;
+        } ...
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.highlight.js.highlight.COMMENT"></a>[function <span class="apidocSignatureSpan">highlight.js.highlight.</span>COMMENT (begin, end, inherits)](#apidoc.element.highlight.js.highlight.COMMENT)
+- description and source-code
+```javascript
+COMMENT = function (begin, end, inherits) {
+  var mode = hljs.inherit(
+    {
+      className: 'comment',
+      begin: begin, end: end,
+      contains: []
+    },
+    inherits || {}
+  );
+  mode.contains.push(hljs.PHRASAL_WORDS_MODE);
+  mode.contains.push({
+    className: 'doctag',
+    begin: '(?:TODO|FIXME|NOTE|BUG|XXX):',
+    relevance: 0
+  });
+  return mode;
+}
+```
+- example usage
+```shell
+...
+  mode.contains.push({
+    className: 'doctag',
+    begin: '(?:TODO|FIXME|NOTE|BUG|XXX):',
+    relevance: 0
+  });
+  return mode;
+};
+hljs.C_LINE_COMMENT_MODE = hljs.COMMENT('//', '$');
+hljs.C_BLOCK_COMMENT_MODE = hljs.COMMENT('/\\*', '\\*/');
+hljs.HASH_COMMENT_MODE = hljs.COMMENT('#', '$');
+hljs.NUMBER_MODE = {
+  className: 'number',
+  begin: hljs.NUMBER_RE,
+  relevance: 0
+};
+...
+```
+
+#### <a name="apidoc.element.highlight.js.highlight.configure"></a>[function <span class="apidocSignatureSpan">highlight.js.highlight.</span>configure (user_options)](#apidoc.element.highlight.js.highlight.configure)
+- description and source-code
+```javascript
+function configure(user_options) {
+  options = inherit(options, user_options);
+}
+```
+- example usage
+```shell
+...
+'''
+
+You can use any tags instead of '<pre><code>' to mark up your code. If
+you don't use a container that preserve line breaks you will need to
+configure highlight.js to use the '<br>' tag:
+
+'''javascript
+hljs.configure({useBR: true});
+
+$('div.code').each(function(i, block) {
+  hljs.highlightBlock(block);
+});
+'''
+
+For other options refer to the documentation for ['configure'][4].
+...
+```
+
+#### <a name="apidoc.element.highlight.js.highlight.fixMarkup"></a>[function <span class="apidocSignatureSpan">highlight.js.highlight.</span>fixMarkup (value)](#apidoc.element.highlight.js.highlight.fixMarkup)
+- description and source-code
+```javascript
+function fixMarkup(value) {
+  return !(options.tabReplace || options.useBR)
+    ? value
+    : value.replace(fixMarkupRe, function(match, p1) {
+        if (options.useBR && match === '\n') {
+          return '<br>';
+        } else if (options.tabReplace) {
+          return p1.replace(/\t/g, options.tabReplace);
+        }
+        return '';
+    });
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.highlight.js.highlight.getLanguage"></a>[function <span class="apidocSignatureSpan">highlight.js.highlight.</span>getLanguage (name)](#apidoc.element.highlight.js.highlight.getLanguage)
+- description and source-code
+```javascript
+function getLanguage(name) {
+  name = (name || '').toLowerCase();
+  return languages[name] || languages[aliases[name]];
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.highlight.js.highlight.highlightAuto"></a>[function <span class="apidocSignatureSpan">highlight.js.highlight.</span>highlightAuto (text, languageSubset)](#apidoc.element.highlight.js.highlight.highlightAuto)
+- description and source-code
+```javascript
+function highlightAuto(text, languageSubset) {
+  languageSubset = languageSubset || options.languages || objectKeys(languages);
+  var result = {
+    relevance: 0,
+    value: escape(text)
+  };
+  var second_best = result;
+  languageSubset.filter(getLanguage).forEach(function(name) {
+    var current = highlight(name, text, false);
+    current.language = name;
+    if (current.relevance > second_best.relevance) {
+      second_best = current;
+    }
+    if (current.relevance > result.relevance) {
+      second_best = result;
+      result = current;
+    }
+  });
+  if (second_best.language) {
+    result.second_best = second_best;
+  }
+  return result;
+}
+```
+- example usage
+```shell
+...
+'''
+
+In worker.js:
+
+'''javascript
+onmessage = function(event) {
+  importScripts('<path>/highlight.pack.js');
+  var result = self.hljs.highlightAuto(event.data);
+  postMessage(result.value);
+}
+'''
+
+
+## Getting the Library
+...
+```
+
+#### <a name="apidoc.element.highlight.js.highlight.highlightBlock"></a>[function <span class="apidocSignatureSpan">highlight.js.highlight.</span>highlightBlock (block)](#apidoc.element.highlight.js.highlight.highlightBlock)
+- description and source-code
+```javascript
+function highlightBlock(block) {
+  var node, originalStream, result, resultNode, text;
+  var language = blockLanguage(block);
+
+  if (isNotHighlighted(language))
+      return;
+
+  if (options.useBR) {
+    node = document.createElementNS('http://www.w3.org/1999/xhtml', 'div');
+    node.innerHTML = block.innerHTML.replace(/\n/g, '').replace(/<br[ \/]*>/g, '\n');
+  } else {
+    node = block;
+  }
+  text = node.textContent;
+  result = language ? highlight(language, text, true) : highlightAuto(text);
+
+  originalStream = nodeStream(node);
+  if (originalStream.length) {
+    resultNode = document.createElementNS('http://www.w3.org/1999/xhtml', 'div');
+    resultNode.innerHTML = result.value;
+    result.value = mergeStreams(originalStream, nodeStream(resultNode), text);
+  }
+  result.value = fixMarkup(result.value);
+
+  block.innerHTML = result.value;
+  block.className = buildClassName(block.className, language, result.language);
+  block.result = {
+    language: result.language,
+    re: result.relevance
+  };
+  if (result.second_best) {
+    block.second_best = {
+      language: result.second_best.language,
+      re: result.second_best.relevance
+    };
+  }
+}
+```
+- example usage
+```shell
+...
+
+Here’s an equivalent way to calling ['initHighlightingOnLoad'][1] using
+jQuery:
+
+'''javascript
+$(document).ready(function() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});
+'''
+
+You can use any tags instead of '<pre><code>' to mark up your code. If
+you don't use a container that preserve line breaks you will need to
+configure highlight.js to use the '<br>' tag:
+...
+```
+
+#### <a name="apidoc.element.highlight.js.highlight.inherit"></a>[function <span class="apidocSignatureSpan">highlight.js.highlight.</span>inherit (parent)](#apidoc.element.highlight.js.highlight.inherit)
+- description and source-code
+```javascript
+function inherit(parent) {  // inherit(parent, override_obj, override_obj, ...)
+  var key;
+  var result = {};
+  var objects = Array.prototype.slice.call(arguments, 1);
+
+  for (key in parent)
+    result[key] = parent[key];
+  objects.forEach(function(obj) {
+    for (key in obj)
+      result[key] = obj[key];
+  });
+  return result;
+}
+```
+- example usage
+```shell
+...
+  illegal: '\\n',
+  contains: [hljs.BACKSLASH_ESCAPE]
+};
+hljs.PHRASAL_WORDS_MODE = {
+  begin: /\b(a|an|the|are|I'm|isn't|don't|doesn't|won't|but|just|should|pretty|simply|enough|gonna|going|wtf|so|such|will|you|your
+|like)\b/
+};
+hljs.COMMENT = function (begin, end, inherits) {
+  var mode = hljs.inherit(
+    {
+      className: 'comment',
+      begin: begin, end: end,
+      contains: []
+    },
+    inherits || {}
+  );
+...
+```
+
+#### <a name="apidoc.element.highlight.js.highlight.initHighlighting"></a>[function <span class="apidocSignatureSpan">highlight.js.highlight.</span>initHighlighting ()](#apidoc.element.highlight.js.highlight.initHighlighting)
+- description and source-code
+```javascript
+function initHighlighting() {
+  if (initHighlighting.called)
+    return;
+  initHighlighting.called = true;
+
+  var blocks = document.querySelectorAll('pre code');
+  ArrayProto.forEach.call(blocks, highlightBlock);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.highlight.js.highlight.initHighlightingOnLoad"></a>[function <span class="apidocSignatureSpan">highlight.js.highlight.</span>initHighlightingOnLoad ()](#apidoc.element.highlight.js.highlight.initHighlightingOnLoad)
+- description and source-code
+```javascript
+function initHighlightingOnLoad() {
+  addEventListener('DOMContentLoaded', initHighlighting, false);
+  addEventListener('load', initHighlighting, false);
+}
+```
+- example usage
+```shell
+...
+The bare minimum for using highlight.js on a web page is linking to the
+library along with one of the styles and calling
+['initHighlightingOnLoad'][1]:
+
+'''html
+<link rel="stylesheet" href="/path/to/styles/default.css">
+<script src="/path/to/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+'''
+
+This will find and highlight code inside of '<pre><code>' tags; it tries
+to detect the language automatically. If automatic detection doesn’t
+work for you, you can specify the language in the 'class' attribute:
+
+'''html
+...
+```
+
+#### <a name="apidoc.element.highlight.js.highlight.listLanguages"></a>[function <span class="apidocSignatureSpan">highlight.js.highlight.</span>listLanguages ()](#apidoc.element.highlight.js.highlight.listLanguages)
+- description and source-code
+```javascript
+function listLanguages() {
+  return objectKeys(languages);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.highlight.js.highlight.registerLanguage"></a>[function <span class="apidocSignatureSpan">highlight.js.highlight.</span>registerLanguage (name, language)](#apidoc.element.highlight.js.highlight.registerLanguage)
 - description and source-code
 ```javascript
 function registerLanguage(name, language) {
