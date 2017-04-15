@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://highlightjs.org/"
-
-    >highlight.js (v9.10.0)</a>
+    <a href="https://highlightjs.org/">highlight.js (v9.10.0)</a>
 </h1>
 <h4>Syntax highlighting with language autodetection.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.highlight.js">module highlight.js</a><ol>
 
@@ -557,7 +550,7 @@
     <li>description and source-code<pre class="apidocCodePre">COMMENT = function (begin, end, inherits) {
   var mode = hljs.inherit(
     {
-      className: &#x27;comment&#x27;,
+      className: 'comment',
       begin: begin, end: end,
       contains: []
     },
@@ -565,25 +558,25 @@
   );
   mode.contains.push(hljs.PHRASAL_WORDS_MODE);
   mode.contains.push({
-    className: &#x27;doctag&#x27;,
-    begin: &#x27;(?:TODO|FIXME|NOTE|BUG|XXX):&#x27;,
+    className: 'doctag',
+    begin: '(?:TODO|FIXME|NOTE|BUG|XXX):',
     relevance: 0
   });
   return mode;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
   mode.contains.push({
-    className: &#x27;doctag&#x27;,
-    begin: &#x27;(?:TODO|FIXME|NOTE|BUG|XXX):&#x27;,
+    className: 'doctag',
+    begin: '(?:TODO|FIXME|NOTE|BUG|XXX):',
     relevance: 0
   });
   return mode;
 };
-hljs.C_LINE_COMMENT_MODE = hljs.<span class="apidocCodeKeywordSpan">COMMENT</span>(&#x27;//&#x27;, &#x27;$&#x27;);
-hljs.C_BLOCK_COMMENT_MODE = hljs.COMMENT(&#x27;/\\*&#x27;, &#x27;\\*/&#x27;);
-hljs.HASH_COMMENT_MODE = hljs.COMMENT(&#x27;#&#x27;, &#x27;$&#x27;);
+hljs.C_LINE_COMMENT_MODE = hljs.<span class="apidocCodeKeywordSpan">COMMENT</span>('//', '$');
+hljs.C_BLOCK_COMMENT_MODE = hljs.COMMENT('/\\*', '\\*/');
+hljs.HASH_COMMENT_MODE = hljs.COMMENT('#', '$');
 hljs.NUMBER_MODE = {
-  className: &#x27;number&#x27;,
+  className: 'number',
   begin: hljs.NUMBER_RE,
   relevance: 0
 };
@@ -605,14 +598,14 @@ hljs.NUMBER_MODE = {
     <li>example usage<pre class="apidocCodePre">...
 ```
 
-You can use any tags instead of `&#x3c;pre&#x3e;&#x3c;code&#x3e;` to mark up your code. If
-you don&#x27;t use a container that preserve line breaks you will need to
-configure highlight.js to use the `&#x3c;br&#x3e;` tag:
+You can use any tags instead of `&lt;pre&gt;&lt;code&gt;` to mark up your code. If
+you don't use a container that preserve line breaks you will need to
+configure highlight.js to use the `&lt;br&gt;` tag:
 
 ```javascript
 hljs.<span class="apidocCodeKeywordSpan">configure</span>({useBR: true});
 
-$(&#x27;div.code&#x27;).each(function(i, block) {
+$('div.code').each(function(i, block) {
   hljs.highlightBlock(block);
 });
 ```
@@ -634,12 +627,12 @@ For other options refer to the documentation for [`configure`][4].
   return !(options.tabReplace || options.useBR)
     ? value
     : value.replace(fixMarkupRe, function(match, p1) {
-        if (options.useBR &#x26;&#x26; match === &#x27;\n&#x27;) {
-          return &#x27;&#x3c;br&#x3e;&#x27;;
+        if (options.useBR &amp;&amp; match === '\n') {
+          return '&lt;br&gt;';
         } else if (options.tabReplace) {
           return p1.replace(/\t/g, options.tabReplace);
         }
-        return &#x27;&#x27;;
+        return '';
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -655,7 +648,7 @@ For other options refer to the documentation for [`configure`][4].
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function getLanguage(name) {
-  name = (name || &#x27;&#x27;).toLowerCase();
+  name = (name || '').toLowerCase();
   return languages[name] || languages[aliases[name]];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -675,7 +668,7 @@ For other options refer to the documentation for [`configure`][4].
   function subMode(lexeme, mode) {
     var i, length;
 
-    for (i = 0, length = mode.contains.length; i &#x3c; length; i++) {
+    for (i = 0, length = mode.contains.length; i &lt; length; i++) {
       if (testRe(mode.contains[i].beginRe, lexeme)) {
         return mode.contains[i];
       }
@@ -684,7 +677,7 @@ For other options refer to the documentation for [`configure`][4].
 
   function endOfMode(mode, lexeme) {
     if (testRe(mode.endRe, lexeme)) {
-      while (mode.endsParent &#x26;&#x26; mode.parent) {
+      while (mode.endsParent &amp;&amp; mode.parent) {
         mode = mode.parent;
       }
       return mode;
@@ -695,20 +688,20 @@ For other options refer to the documentation for [`configure`][4].
   }
 
   function isIllegal(lexeme, mode) {
-    return !ignore_illegals &#x26;&#x26; testRe(mode.illegalRe, lexeme);
+    return !ignore_illegals &amp;&amp; testRe(mode.illegalRe, lexeme);
   }
 
   function keywordMatch(mode, match) {
     var match_str = language.case_insensitive ? match[0].toLowerCase() : match[0];
-    return mode.keywords.hasOwnProperty(match_str) &#x26;&#x26; mode.keywords[match_str];
+    return mode.keywords.hasOwnProperty(match_str) &amp;&amp; mode.keywords[match_str];
   }
 
   function buildSpan(classname, insideSpan, leaveOpen, noPrefix) {
-    var classPrefix = noPrefix ? &#x27;&#x27; : options.classPrefix,
-        openSpan    = &#x27;&#x3c;span class=&#x22;&#x27; + classPrefix,
-        closeSpan   = leaveOpen ? &#x27;&#x27; : spanEndTag
+    var classPrefix = noPrefix ? '' : options.classPrefix,
+        openSpan    = '&lt;span class="' + classPrefix,
+        closeSpan   = leaveOpen ? '' : spanEndTag
 
-    openSpan += classname + &#x27;&#x22;&#x3e;&#x27;;
+    openSpan += classname + '"&gt;';
 
     return openSpan + insideSpan + closeSpan;
   }
@@ -719,7 +712,7 @@ For other options refer to the documentation for [`configure`][4].
     if (!top.keywords)
       return escape(mode_buffer);
 
-    result = &#x27;&#x27;;
+    result = '';
     last_index = 0;
     top.lexemesRe.lastIndex = 0;
     match = top.lexemesRe.exec(mode_buffer);
@@ -740,8 +733,8 @@ For other options refer to the documentation for [`configure`][4].
   }
 
   function processSubLanguage() {
-    var explicit = typeof top.subLanguage === &#x27;string&#x27;;
-    if (explicit &#x26;&#x26; !languages[top.subLanguage]) {
+    var explicit = typeof top.subLanguage === 'string';
+    if (explicit &amp;&amp; !languages[top.subLanguage]) {
       return escape(mode_buffer);
     }
 
@@ -753,7 +746,7 @@ For other options refer to the documentation for [`configure`][4].
     // with zeroing the containing mode relevance. Usecase in point is Markdown that
     // allows XML everywhere and makes every XML snippet to have a much larger Markdown
     // score.
-    if (top.relevance &#x3e; 0) {
+    if (top.relevance &gt; 0) {
       relevance += result.relevance;
     }
     if (explicit) {
@@ -764,11 +757,11 @@ For other options refer to the documentation for [`configure`][4].
 
   function processBuffer() {
     result += (top.subLanguage != null ? processSubLanguage() : processKeywords());
-    mode_buffer = &#x27;&#x27;;
+    mode_buffer = '';
   }
 
   function startNewMode(mode) {
-    result += mode.className? buildSpan(mode.className, &#x27;&#x27;, true): &#x27;&#x27;;
+    result += mode.className? buildSpan(mode.className, '', true): '';
     top = Object.create(mode, {parent: {value: top}});
   }
 
@@ -790,7 +783,7 @@ For other options refer to the documentation for [`configure`][4].
           mode_buffer += lexeme;
         }
         processBuffer();
-        if (!new_mode.returnBegin &#x26;&#x26; !new_mode.excludeBegin) {
+        if (!new_mode.returnBegin &amp;&amp; !new_mode.excludeBegin) {
           mode_buffer = lexeme;
         }
       }
@@ -833,10 +826,10 @@ For other options refer to the documentation for [`configure`][4].
   languageSubset.filter(getLanguage).forEach(function(name) {
     var current = highlight(name, text, false);
     current.language = name;
-    if (current.relevance &#x3e; second_best.relevance) {
+    if (current.relevance &gt; second_best.relevance) {
       second_best = current;
     }
-    if (current.relevance &#x3e; result.relevance) {
+    if (current.relevance &gt; result.relevance) {
       second_best = result;
       result = current;
     }
@@ -853,7 +846,7 @@ In worker.js:
 
 ```javascript
 onmessage = function(event) {
-  importScripts(&#x27;&#x3c;path&#x3e;/highlight.pack.js&#x27;);
+  importScripts('&lt;path&gt;/highlight.pack.js');
   var result = self.hljs.<span class="apidocCodeKeywordSpan">highlightAuto</span>(event.data);
   postMessage(result.value);
 }
@@ -881,8 +874,8 @@ onmessage = function(event) {
       return;
 
   if (options.useBR) {
-    node = document.createElementNS(&#x27;http://www.w3.org/1999/xhtml&#x27;, &#x27;div&#x27;);
-    node.innerHTML = block.innerHTML.replace(/\n/g, &#x27;&#x27;).replace(/&#x3c;br[ \/]*&#x3e;/g, &#x27;\n&#x27;);
+    node = document.createElementNS('http://www.w3.org/1999/xhtml', 'div');
+    node.innerHTML = block.innerHTML.replace(/\n/g, '').replace(/&lt;br[ \/]*&gt;/g, '\n');
   } else {
     node = block;
   }
@@ -891,7 +884,7 @@ onmessage = function(event) {
 
   originalStream = nodeStream(node);
   if (originalStream.length) {
-    resultNode = document.createElementNS(&#x27;http://www.w3.org/1999/xhtml&#x27;, &#x27;div&#x27;);
+    resultNode = document.createElementNS('http://www.w3.org/1999/xhtml', 'div');
     resultNode.innerHTML = result.value;
     result.value = mergeStreams(originalStream, nodeStream(resultNode), text);
   }
@@ -912,20 +905,20 @@ onmessage = function(event) {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-Here’s an equivalent way to calling [`initHighlightingOnLoad`][1] using
+Hereâ€™s an equivalent way to calling [`initHighlightingOnLoad`][1] using
 jQuery:
 
 ```javascript
 $(document).ready(function() {
-  $(&#x27;pre code&#x27;).each(function(i, block) {
+  $('pre code').each(function(i, block) {
     hljs.<span class="apidocCodeKeywordSpan">highlightBlock</span>(block);
   });
 });
 ```
 
-You can use any tags instead of `&#x3c;pre&#x3e;&#x3c;code&#x3e;` to mark up your code. If
-you don&#x27;t use a container that preserve line breaks you will need to
-configure highlight.js to use the `&#x3c;br&#x3e;` tag:
+You can use any tags instead of `&lt;pre&gt;&lt;code&gt;` to mark up your code. If
+you don't use a container that preserve line breaks you will need to
+configure highlight.js to use the `&lt;br&gt;` tag:
 ...</pre></li>
     </ul>
 
@@ -952,17 +945,17 @@ configure highlight.js to use the `&#x3c;br&#x3e;` tag:
   return result;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  illegal: &#x27;\\n&#x27;,
+  illegal: '\\n',
   contains: [hljs.BACKSLASH_ESCAPE]
 };
 hljs.PHRASAL_WORDS_MODE = {
-  begin: /\b(a|an|the|are|I&#x27;m|isn&#x27;t|don&#x27;t|doesn&#x27;t|won&#x27;t|but|just|should|pretty|simply|enough|gonna|going
+  begin: /\b(a|an|the|are|I'm|isn't|don't|doesn't|won't|but|just|should|pretty|simply|enough|gonna|going
 |wtf|so|such|will|you|your|like)\b/
 };
 hljs.COMMENT = function (begin, end, inherits) {
   var mode = hljs.<span class="apidocCodeKeywordSpan">inherit</span>(
     {
-      className: &#x27;comment&#x27;,
+      className: 'comment',
       begin: begin, end: end,
       contains: []
     },
@@ -985,7 +978,7 @@ hljs.COMMENT = function (begin, end, inherits) {
     return;
   initHighlighting.called = true;
 
-  var blocks = document.querySelectorAll(&#x27;pre code&#x27;);
+  var blocks = document.querySelectorAll('pre code');
   ArrayProto.forEach.call(blocks, highlightBlock);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1001,8 +994,8 @@ hljs.COMMENT = function (begin, end, inherits) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function initHighlightingOnLoad() {
-  addEventListener(&#x27;DOMContentLoaded&#x27;, initHighlighting, false);
-  addEventListener(&#x27;load&#x27;, initHighlighting, false);
+  addEventListener('DOMContentLoaded', initHighlighting, false);
+  addEventListener('load', initHighlighting, false);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 The bare minimum for using highlight.js on a web page is linking to the
@@ -1010,13 +1003,13 @@ library along with one of the styles and calling
 [`initHighlightingOnLoad`][1]:
 
 ```html
-&#x3c;link rel=&#x22;stylesheet&#x22; href=&#x22;/path/to/styles/default.css&#x22;&#x3e;
-&#x3c;script src=&#x22;/path/to/highlight.pack.js&#x22;&#x3e;&#x3c;/script&#x3e;
-&#x3c;script&#x3e;hljs.<span class="apidocCodeKeywordSpan">initHighlightingOnLoad</span>();&#x3c;/script&#x3e;
+&lt;link rel="stylesheet" href="/path/to/styles/default.css"&gt;
+&lt;script src="/path/to/highlight.pack.js"&gt;&lt;/script&gt;
+&lt;script&gt;hljs.<span class="apidocCodeKeywordSpan">initHighlightingOnLoad</span>();&lt;/script&gt;
 ```
 
-This will find and highlight code inside of `&#x3c;pre&#x3e;&#x3c;code&#x3e;` tags; it tries
-to detect the language automatically. If automatic detection doesn’t
+This will find and highlight code inside of `&lt;pre&gt;&lt;code&gt;` tags; it tries
+to detect the language automatically. If automatic detection doesnâ€™t
 work for you, you can specify the language in the `class` attribute:
 
 ```html
@@ -1119,7 +1112,7 @@ work for you, you can specify the language in the `class` attribute:
   function subMode(lexeme, mode) {
     var i, length;
 
-    for (i = 0, length = mode.contains.length; i &#x3c; length; i++) {
+    for (i = 0, length = mode.contains.length; i &lt; length; i++) {
       if (testRe(mode.contains[i].beginRe, lexeme)) {
         return mode.contains[i];
       }
@@ -1128,7 +1121,7 @@ work for you, you can specify the language in the `class` attribute:
 
   function endOfMode(mode, lexeme) {
     if (testRe(mode.endRe, lexeme)) {
-      while (mode.endsParent &#x26;&#x26; mode.parent) {
+      while (mode.endsParent &amp;&amp; mode.parent) {
         mode = mode.parent;
       }
       return mode;
@@ -1139,20 +1132,20 @@ work for you, you can specify the language in the `class` attribute:
   }
 
   function isIllegal(lexeme, mode) {
-    return !ignore_illegals &#x26;&#x26; testRe(mode.illegalRe, lexeme);
+    return !ignore_illegals &amp;&amp; testRe(mode.illegalRe, lexeme);
   }
 
   function keywordMatch(mode, match) {
     var match_str = language.case_insensitive ? match[0].toLowerCase() : match[0];
-    return mode.keywords.hasOwnProperty(match_str) &#x26;&#x26; mode.keywords[match_str];
+    return mode.keywords.hasOwnProperty(match_str) &amp;&amp; mode.keywords[match_str];
   }
 
   function buildSpan(classname, insideSpan, leaveOpen, noPrefix) {
-    var classPrefix = noPrefix ? &#x27;&#x27; : options.classPrefix,
-        openSpan    = &#x27;&#x3c;span class=&#x22;&#x27; + classPrefix,
-        closeSpan   = leaveOpen ? &#x27;&#x27; : spanEndTag
+    var classPrefix = noPrefix ? '' : options.classPrefix,
+        openSpan    = '&lt;span class="' + classPrefix,
+        closeSpan   = leaveOpen ? '' : spanEndTag
 
-    openSpan += classname + &#x27;&#x22;&#x3e;&#x27;;
+    openSpan += classname + '"&gt;';
 
     return openSpan + insideSpan + closeSpan;
   }
@@ -1163,7 +1156,7 @@ work for you, you can specify the language in the `class` attribute:
     if (!top.keywords)
       return escape(mode_buffer);
 
-    result = &#x27;&#x27;;
+    result = '';
     last_index = 0;
     top.lexemesRe.lastIndex = 0;
     match = top.lexemesRe.exec(mode_buffer);
@@ -1184,8 +1177,8 @@ work for you, you can specify the language in the `class` attribute:
   }
 
   function processSubLanguage() {
-    var explicit = typeof top.subLanguage === &#x27;string&#x27;;
-    if (explicit &#x26;&#x26; !languages[top.subLanguage]) {
+    var explicit = typeof top.subLanguage === 'string';
+    if (explicit &amp;&amp; !languages[top.subLanguage]) {
       return escape(mode_buffer);
     }
 
@@ -1197,7 +1190,7 @@ work for you, you can specify the language in the `class` attribute:
     // with zeroing the containing mode relevance. Usecase in point is Markdown that
     // allows XML everywhere and makes every XML snippet to have a much larger Markdown
     // score.
-    if (top.relevance &#x3e; 0) {
+    if (top.relevance &gt; 0) {
       relevance += result.relevance;
     }
     if (explicit) {
@@ -1208,11 +1201,11 @@ work for you, you can specify the language in the `class` attribute:
 
   function processBuffer() {
     result += (top.subLanguage != null ? processSubLanguage() : processKeywords());
-    mode_buffer = &#x27;&#x27;;
+    mode_buffer = '';
   }
 
   function startNewMode(mode) {
-    result += mode.className? buildSpan(mode.className, &#x27;&#x27;, true): &#x27;&#x27;;
+    result += mode.className? buildSpan(mode.className, '', true): '';
     top = Object.create(mode, {parent: {value: top}});
   }
 
@@ -1234,7 +1227,7 @@ work for you, you can specify the language in the `class` attribute:
           mode_buffer += lexeme;
         }
         processBuffer();
-        if (!new_mode.returnBegin &#x26;&#x26; !new_mode.excludeBegin) {
+        if (!new_mode.returnBegin &amp;&amp; !new_mode.excludeBegin) {
           mode_buffer = lexeme;
         }
       }
@@ -1270,7 +1263,7 @@ work for you, you can specify the language in the `class` attribute:
     <li>description and source-code<pre class="apidocCodePre">COMMENT = function (begin, end, inherits) {
   var mode = hljs.inherit(
     {
-      className: &#x27;comment&#x27;,
+      className: 'comment',
       begin: begin, end: end,
       contains: []
     },
@@ -1278,25 +1271,25 @@ work for you, you can specify the language in the `class` attribute:
   );
   mode.contains.push(hljs.PHRASAL_WORDS_MODE);
   mode.contains.push({
-    className: &#x27;doctag&#x27;,
-    begin: &#x27;(?:TODO|FIXME|NOTE|BUG|XXX):&#x27;,
+    className: 'doctag',
+    begin: '(?:TODO|FIXME|NOTE|BUG|XXX):',
     relevance: 0
   });
   return mode;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
   mode.contains.push({
-    className: &#x27;doctag&#x27;,
-    begin: &#x27;(?:TODO|FIXME|NOTE|BUG|XXX):&#x27;,
+    className: 'doctag',
+    begin: '(?:TODO|FIXME|NOTE|BUG|XXX):',
     relevance: 0
   });
   return mode;
 };
-hljs.C_LINE_COMMENT_MODE = hljs.<span class="apidocCodeKeywordSpan">COMMENT</span>(&#x27;//&#x27;, &#x27;$&#x27;);
-hljs.C_BLOCK_COMMENT_MODE = hljs.COMMENT(&#x27;/\\*&#x27;, &#x27;\\*/&#x27;);
-hljs.HASH_COMMENT_MODE = hljs.COMMENT(&#x27;#&#x27;, &#x27;$&#x27;);
+hljs.C_LINE_COMMENT_MODE = hljs.<span class="apidocCodeKeywordSpan">COMMENT</span>('//', '$');
+hljs.C_BLOCK_COMMENT_MODE = hljs.COMMENT('/\\*', '\\*/');
+hljs.HASH_COMMENT_MODE = hljs.COMMENT('#', '$');
 hljs.NUMBER_MODE = {
-  className: &#x27;number&#x27;,
+  className: 'number',
   begin: hljs.NUMBER_RE,
   relevance: 0
 };
@@ -1318,14 +1311,14 @@ hljs.NUMBER_MODE = {
     <li>example usage<pre class="apidocCodePre">...
 ```
 
-You can use any tags instead of `&#x3c;pre&#x3e;&#x3c;code&#x3e;` to mark up your code. If
-you don&#x27;t use a container that preserve line breaks you will need to
-configure highlight.js to use the `&#x3c;br&#x3e;` tag:
+You can use any tags instead of `&lt;pre&gt;&lt;code&gt;` to mark up your code. If
+you don't use a container that preserve line breaks you will need to
+configure highlight.js to use the `&lt;br&gt;` tag:
 
 ```javascript
 hljs.<span class="apidocCodeKeywordSpan">configure</span>({useBR: true});
 
-$(&#x27;div.code&#x27;).each(function(i, block) {
+$('div.code').each(function(i, block) {
   hljs.highlightBlock(block);
 });
 ```
@@ -1347,12 +1340,12 @@ For other options refer to the documentation for [`configure`][4].
   return !(options.tabReplace || options.useBR)
     ? value
     : value.replace(fixMarkupRe, function(match, p1) {
-        if (options.useBR &#x26;&#x26; match === &#x27;\n&#x27;) {
-          return &#x27;&#x3c;br&#x3e;&#x27;;
+        if (options.useBR &amp;&amp; match === '\n') {
+          return '&lt;br&gt;';
         } else if (options.tabReplace) {
           return p1.replace(/\t/g, options.tabReplace);
         }
-        return &#x27;&#x27;;
+        return '';
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1368,7 +1361,7 @@ For other options refer to the documentation for [`configure`][4].
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function getLanguage(name) {
-  name = (name || &#x27;&#x27;).toLowerCase();
+  name = (name || '').toLowerCase();
   return languages[name] || languages[aliases[name]];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1393,10 +1386,10 @@ For other options refer to the documentation for [`configure`][4].
   languageSubset.filter(getLanguage).forEach(function(name) {
     var current = highlight(name, text, false);
     current.language = name;
-    if (current.relevance &#x3e; second_best.relevance) {
+    if (current.relevance &gt; second_best.relevance) {
       second_best = current;
     }
-    if (current.relevance &#x3e; result.relevance) {
+    if (current.relevance &gt; result.relevance) {
       second_best = result;
       result = current;
     }
@@ -1413,7 +1406,7 @@ In worker.js:
 
 ```javascript
 onmessage = function(event) {
-  importScripts(&#x27;&#x3c;path&#x3e;/highlight.pack.js&#x27;);
+  importScripts('&lt;path&gt;/highlight.pack.js');
   var result = self.hljs.<span class="apidocCodeKeywordSpan">highlightAuto</span>(event.data);
   postMessage(result.value);
 }
@@ -1441,8 +1434,8 @@ onmessage = function(event) {
       return;
 
   if (options.useBR) {
-    node = document.createElementNS(&#x27;http://www.w3.org/1999/xhtml&#x27;, &#x27;div&#x27;);
-    node.innerHTML = block.innerHTML.replace(/\n/g, &#x27;&#x27;).replace(/&#x3c;br[ \/]*&#x3e;/g, &#x27;\n&#x27;);
+    node = document.createElementNS('http://www.w3.org/1999/xhtml', 'div');
+    node.innerHTML = block.innerHTML.replace(/\n/g, '').replace(/&lt;br[ \/]*&gt;/g, '\n');
   } else {
     node = block;
   }
@@ -1451,7 +1444,7 @@ onmessage = function(event) {
 
   originalStream = nodeStream(node);
   if (originalStream.length) {
-    resultNode = document.createElementNS(&#x27;http://www.w3.org/1999/xhtml&#x27;, &#x27;div&#x27;);
+    resultNode = document.createElementNS('http://www.w3.org/1999/xhtml', 'div');
     resultNode.innerHTML = result.value;
     result.value = mergeStreams(originalStream, nodeStream(resultNode), text);
   }
@@ -1472,20 +1465,20 @@ onmessage = function(event) {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-Here’s an equivalent way to calling [`initHighlightingOnLoad`][1] using
+Hereâ€™s an equivalent way to calling [`initHighlightingOnLoad`][1] using
 jQuery:
 
 ```javascript
 $(document).ready(function() {
-  $(&#x27;pre code&#x27;).each(function(i, block) {
+  $('pre code').each(function(i, block) {
     hljs.<span class="apidocCodeKeywordSpan">highlightBlock</span>(block);
   });
 });
 ```
 
-You can use any tags instead of `&#x3c;pre&#x3e;&#x3c;code&#x3e;` to mark up your code. If
-you don&#x27;t use a container that preserve line breaks you will need to
-configure highlight.js to use the `&#x3c;br&#x3e;` tag:
+You can use any tags instead of `&lt;pre&gt;&lt;code&gt;` to mark up your code. If
+you don't use a container that preserve line breaks you will need to
+configure highlight.js to use the `&lt;br&gt;` tag:
 ...</pre></li>
     </ul>
 
@@ -1512,17 +1505,17 @@ configure highlight.js to use the `&#x3c;br&#x3e;` tag:
   return result;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  illegal: &#x27;\\n&#x27;,
+  illegal: '\\n',
   contains: [hljs.BACKSLASH_ESCAPE]
 };
 hljs.PHRASAL_WORDS_MODE = {
-  begin: /\b(a|an|the|are|I&#x27;m|isn&#x27;t|don&#x27;t|doesn&#x27;t|won&#x27;t|but|just|should|pretty|simply|enough|gonna|going
+  begin: /\b(a|an|the|are|I'm|isn't|don't|doesn't|won't|but|just|should|pretty|simply|enough|gonna|going
 |wtf|so|such|will|you|your|like)\b/
 };
 hljs.COMMENT = function (begin, end, inherits) {
   var mode = hljs.<span class="apidocCodeKeywordSpan">inherit</span>(
     {
-      className: &#x27;comment&#x27;,
+      className: 'comment',
       begin: begin, end: end,
       contains: []
     },
@@ -1545,7 +1538,7 @@ hljs.COMMENT = function (begin, end, inherits) {
     return;
   initHighlighting.called = true;
 
-  var blocks = document.querySelectorAll(&#x27;pre code&#x27;);
+  var blocks = document.querySelectorAll('pre code');
   ArrayProto.forEach.call(blocks, highlightBlock);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1561,8 +1554,8 @@ hljs.COMMENT = function (begin, end, inherits) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function initHighlightingOnLoad() {
-  addEventListener(&#x27;DOMContentLoaded&#x27;, initHighlighting, false);
-  addEventListener(&#x27;load&#x27;, initHighlighting, false);
+  addEventListener('DOMContentLoaded', initHighlighting, false);
+  addEventListener('load', initHighlighting, false);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 The bare minimum for using highlight.js on a web page is linking to the
@@ -1570,13 +1563,13 @@ library along with one of the styles and calling
 [`initHighlightingOnLoad`][1]:
 
 ```html
-&#x3c;link rel=&#x22;stylesheet&#x22; href=&#x22;/path/to/styles/default.css&#x22;&#x3e;
-&#x3c;script src=&#x22;/path/to/highlight.pack.js&#x22;&#x3e;&#x3c;/script&#x3e;
-&#x3c;script&#x3e;hljs.<span class="apidocCodeKeywordSpan">initHighlightingOnLoad</span>();&#x3c;/script&#x3e;
+&lt;link rel="stylesheet" href="/path/to/styles/default.css"&gt;
+&lt;script src="/path/to/highlight.pack.js"&gt;&lt;/script&gt;
+&lt;script&gt;hljs.<span class="apidocCodeKeywordSpan">initHighlightingOnLoad</span>();&lt;/script&gt;
 ```
 
-This will find and highlight code inside of `&#x3c;pre&#x3e;&#x3c;code&#x3e;` tags; it tries
-to detect the language automatically. If automatic detection doesn’t
+This will find and highlight code inside of `&lt;pre&gt;&lt;code&gt;` tags; it tries
+to detect the language automatically. If automatic detection doesnâ€™t
 work for you, you can specify the language in the `class` attribute:
 
 ```html
@@ -1667,3 +1660,4 @@ work for you, you can specify the language in the `class` attribute:
     ]
 </div>
 </div>
+</body></html>
