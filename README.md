@@ -1,4 +1,7 @@
-# api documentation for  [highlight.js (v9.10.0)](https://highlightjs.org/)  [![npm package](https://img.shields.io/npm/v/npmdoc-highlight.js.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-highlight.js) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-highlight.js.svg)](https://travis-ci.org/npmdoc/node-npmdoc-highlight.js)
+# npmdoc-highlight.js
+
+#### basic api documentation for  [highlight.js (v9.11.0)](https://highlightjs.org/)  [![npm package](https://img.shields.io/npm/v/npmdoc-highlight.js.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-highlight.js) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-highlight.js.svg)](https://travis-ci.org/npmdoc/node-npmdoc-highlight.js)
+
 #### Syntax highlighting with language autodetection.
 
 [![NPM](https://nodei.co/npm/highlight.js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/highlight.js)
@@ -733,6 +736,15 @@
         },
         {
             "name": "Rene Saarsoo"
+        },
+        {
+            "name": "Jordi Petit"
+        },
+        {
+            "name": "Raphaël Parrëe"
+        },
+        {
+            "name": "Joël Porquet"
         }
     ],
     "dependencies": {},
@@ -753,8 +765,8 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "f9f0b14c0be00f0e4fb1e577b749fed9e6f52f55",
-        "tarball": "https://registry.npmjs.org/highlight.js/-/highlight.js-9.10.0.tgz"
+        "shasum": "47f98c7399918700db2caf230ded12cec41a84ae",
+        "tarball": "https://registry.npmjs.org/highlight.js/-/highlight.js-9.11.0.tgz"
     },
     "engines": {
         "node": "*"
@@ -784,7 +796,8 @@
         "test": "mocha test/",
         "test-browser": "mocha test/browser/"
     },
-    "version": "9.10.0"
+    "version": "9.11.0",
+    "bin": {}
 }
 ```
 
